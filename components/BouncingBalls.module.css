@@ -1,0 +1,11 @@
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    will-change: transform;
+    max-width: 1em; /* Set a maximum width for responsiveness */
+    max-height: 1em; /* Set a maximum height for responsiveness */
+    overflow: hidden;
+    pointer-events: none; /* Ensure the balls do not interfere with other elements */
+  }
+  
