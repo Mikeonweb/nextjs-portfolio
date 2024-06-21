@@ -13,7 +13,7 @@ const Main = () => {
             😊 Thank you for checking me out 😊
           </p>
           <h1 className="py-4 text-gray-700">
-            Hello, I&#39;m{" "}
+            Hello! <br /> I&#39;m{" "}
             <span className="text-[#6e7024]"> Michael Sunday</span>
           </h1>
           <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
