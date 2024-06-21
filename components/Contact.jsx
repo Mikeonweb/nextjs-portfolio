@@ -46,7 +46,7 @@ const Contact = () => {
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
-                    <p className="absolute ml-1 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="absolute ml-1 my-2 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                       LinkedIn
                     </p>
                   </a>
@@ -59,7 +59,7 @@ const Contact = () => {
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
-                    <p className="absolute ml-2 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="absolute ml-2 my-2 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                       Github
                     </p>
                   </a>
@@ -68,7 +68,7 @@ const Contact = () => {
                     <a href="mailto:michael.sun14@gmail.com">
                       <AiOutlineMail />
                     </a>
-                    <p className="absolute -ml-4 my-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="absolute -ml-4 my-6 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                       E-&nbsp;Mail
                     </p>
                   </div>
@@ -76,7 +76,7 @@ const Contact = () => {
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <RiUser2Fill className="text-lg"/>
                     </div>
-                    <p className="absolute my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <p className="absolute my-2 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
                       Resume
                     </p>
                   </Link>

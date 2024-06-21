@@ -33,7 +33,7 @@ const Main = () => {
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
-              <p className="absolute ml-1 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LinkedIn</p>
+              <p className="absolute ml-1 my-4 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">LinkedIn</p>
             </a>
             <a
               href="https://github.com/Mikeonweb"
@@ -44,7 +44,7 @@ const Main = () => {
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
-              <p className="absolute ml-2 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Github</p>
+              <p className="absolute ml-2 my-4 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">Github</p>
             </a>
             {/* <Link href="mailto:michael.sun14@gmail.com">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
