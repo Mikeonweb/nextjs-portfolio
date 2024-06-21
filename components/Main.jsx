@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { RiUser2Fill } from "react-icons/ri";
 
 const Main = () => {
   return (
@@ -28,28 +28,35 @@ const Main = () => {
               href="https://www.linkedin.com/in/michael-sunday-18b5a4267"
               target="_blank"
               rel="noreferrer"
+              className="relative group"
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
+              <p className="absolute ml-1 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">LinkedIn</p>
             </a>
             <a
               href="https://github.com/Mikeonweb"
               target="_blank"
               rel="noreferrer"
+              className="relative group"
             >
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
+              <p className="absolute ml-2 my-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">Github</p>
             </a>
-            <Link href="mailto:michael.sun14@gmail.com">
+            {/* <Link href="mailto:michael.sun14@gmail.com">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
-            </Link>
+            </Link> */}
             <Link href="/resume">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                <BsFillPersonLinesFill />
+                <h3 className="flex items-center">
+                  <RiUser2Fill className="text-xl" />
+                  Resume
+                </h3>
               </div>
             </Link>
           </div>

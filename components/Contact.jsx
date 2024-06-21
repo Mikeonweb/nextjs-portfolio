@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../public/assets/contact.jpg";
+import { RiUser2Fill } from "react-icons/ri";
 
 const Contact = () => {
   return (
@@ -41,30 +41,44 @@ const Contact = () => {
                     href="https://www.linkedin.com/in/michael-sunday-18b5a4267/"
                     target="_blank"
                     rel="noreferrer"
+                    className="relative group"
                   >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
+                    <p className="absolute ml-1 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      LinkedIn
+                    </p>
                   </a>
                   <a
                     href="https://github.com/Mikeonweb"
                     target="_blank"
                     rel="noreferrer"
+                    className="relative group"
                   >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
+                    <p className="absolute ml-2 my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Github
+                    </p>
                   </a>
 
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                  <div className="rounded-full relative group shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                     <a href="mailto:michael.sun14@gmail.com">
                       <AiOutlineMail />
                     </a>
+                    <p className="absolute -ml-4 my-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      E-&nbsp;Mail
+                    </p>
                   </div>
-                  <Link href="/resume">
+                  <Link href="/resume" className="relative group">
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <BsFillPersonLinesFill />
+                      <RiUser2Fill className="text-lg"/>
                     </div>
+                    <p className="absolute my-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      Resume
+                    </p>
                   </Link>
                 </div>
               </div>
