@@ -39,3 +39,338 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#7ab083] to-[#436d7d] text-white;
   }
 }
+
+/* LOGO STYLE */
+.focus {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.2rem;
+  line-height: 1;
+  position: relative;
+  /* width: 179px; */
+  background-color: #000;
+}
+.focus:before {
+  content: "MikeOnWeb";
+  filter: blur(3px);
+}
+.focus:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: calc(100% + 8px);
+  top: -4px;
+  left: 0;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  -webkit-animation: mask-move 1s linear infinite alternate;
+          animation: mask-move 1s linear infinite alternate;
+}
+.focus--mask {
+  overflow: hidden;
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #000000;
+  -webkit-animation: mask-move 1s linear infinite alternate;
+          animation: mask-move 1s linear infinite alternate;
+}
+.focus--mask-inner {
+  -webkit-animation: mask-inner-move 1s linear infinite alternate;
+          animation: mask-inner-move 1s linear infinite alternate;
+}
+
+@-webkit-keyframes mask-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(180px);
+  }
+}
+@keyframes mask-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(180px);
+  }
+}
+@-webkit-keyframes mask-inner-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-180px);
+  }
+}
+@keyframes mask-inner-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-180px);
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* LOGO STYLE */
+
+/* DEVELOPER NAME STYLE */
+@font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+.sign {
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #000, -0.2rem 0.1rem 1rem #000,
+    0.2rem 0.1rem 1rem #000, 0 -0.5rem 2rem #7fff24, 0 0.5rem 3rem #7fff24;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #000, -0.2rem 0.1rem 1rem #000,
+      0.2rem 0.1rem 1rem #000, 0 -0.5rem 2rem #7fff24, 0 0.5rem 3rem #7fff24;
+  }
+  28%,
+  33% {
+    color: #4f5415;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #277b7a;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #18486b;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #000, -0.2rem 0.1rem 1rem #000,
+      0.2rem 0.1rem 1rem #000, 0 -0.5rem 2rem #565d1f, 0 0.5rem 3rem #565d1f;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* DEVELOPER NAME STYLE */
+
+/* MESSAGE BUTTON STYLE */
+.message-btn,
+.message-btn *,
+.message-btn :after,
+.message-btn :before,
+.message-btn:after,
+.message-btn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.message-btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.message-btn:disabled {
+  cursor: default;
+}
+.message-btn:-moz-focusring {
+  outline: auto;
+}
+.message-btn svg {
+  display: block;
+  vertical-align: middle;
+}
+.message-btn [hidden] {
+  display: none;
+}
+.message-btn {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  border: 1px solid;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2em transparent;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #596a5f;
+  }
+}
+/* MESSAGE BUTTON STYLE */

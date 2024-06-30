@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { RiUser2Fill } from "react-icons/ri";
 
@@ -12,10 +11,13 @@ const Main = () => {
           <p className="uppercase text-sm tracking-widest text-gray-600">
             😊 Thank you for checking me out 😊
           </p>
-          <h1 className="py-4 text-gray-700">
-            Hello! <br /> I&#39;m{" "}
-            <span className="text-[#6e7024]"> Michael Sunday</span>
-          </h1>
+          <h1 className="py-4 text-gray-700">Hello! I&#39;m</h1>
+          <div className="sign">
+            <h1 className="py-4">
+              <span className="fast-flicker">M</span>ichael
+              <span className="flicker"> S</span>unday
+            </h1>
+          </div>
           <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
           <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto">
             I transform your visions into compelling websites for enhanced
@@ -33,7 +35,9 @@ const Main = () => {
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
-              <p className="absolute ml-1 my-4 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">LinkedIn</p>
+              <p className="absolute ml-1 my-4 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                LinkedIn
+              </p>
             </a>
             <a
               href="https://github.com/Mikeonweb"
@@ -44,7 +48,9 @@ const Main = () => {
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
-              <p className="absolute ml-2 my-4 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">Github</p>
+              <p className="absolute ml-2 my-4 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
+                Github
+              </p>
             </a>
             {/* <Link href="mailto:michael.sun14@gmail.com">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">

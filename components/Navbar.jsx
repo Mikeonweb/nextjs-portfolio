@@ -1,8 +1,8 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { RiUser2Fill, RiMenuUnfold4Line } from "react-icons/ri";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -36,7 +36,13 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <h3 className="cursor-pointer font-bold text-2xl">MikeOnWeb</h3>
+          <div className="focus border rounded-lg">
+            <div className="focus--mask border rounded-lg">
+              <h3 className="focus--mask-inner cursor-pointer font-bold text-[2rem]">
+                MikeOnWeb
+              </h3>
+            </div>
+          </div>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
@@ -65,7 +71,7 @@ const Navbar = () => {
             onClick={handleNav}
             className="md:hidden"
           >
-            <AiOutlineMenu size={25} />
+            <RiMenuUnfold4Line size={25} />
           </div>
         </div>
       </div>
@@ -172,7 +178,7 @@ const Navbar = () => {
                     onClick={() => setNav(!nav)}
                     className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
                   >
-                    <BsFillPersonLinesFill />
+                    <RiUser2Fill />
                   </div>
                 </Link>
               </div>

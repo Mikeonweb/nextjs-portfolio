@@ -3,9 +3,9 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { TbTransitionTop } from "react-icons/tb";
 import ContactImg from "../public/assets/contact.jpg";
-import { RiUser2Fill } from "react-icons/ri";
+import { RiTwitterXFill } from "react-icons/ri";
 
 const Contact = () => {
   return (
@@ -72,12 +72,17 @@ const Contact = () => {
                       E-&nbsp;Mail
                     </p>
                   </div>
-                  <Link href="/resume" className="relative group">
+                  <Link
+                    href="https://x.com/_Mikeonweb"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="relative group"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <RiUser2Fill className="text-lg"/>
+                      <RiTwitterXFill className="text-lg" />
                     </div>
                     <p className="absolute my-2 opacity-0 md:group-hover:opacity-100 transition-opacity duration-300">
-                      Resume
+                      Twitter
                     </p>
                   </Link>
                 </div>
@@ -97,7 +102,7 @@ const Contact = () => {
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
                     <input
-                      className="border-2 outline-none rounded-lg p-3 flex border-gray-300"
+                      className="border-x-0 border-b-2 bg-inherit outline-none rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="name"
                     />
@@ -107,7 +112,7 @@ const Contact = () => {
                       Phone Number
                     </label>
                     <input
-                      className="border-2 outline-none rounded-lg p-3 flex border-gray-300"
+                      className="border-x-0 border-b-2 bg-inherit outline-none rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="phone"
                     />
@@ -116,7 +121,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Email</label>
                   <input
-                    className="border-2 outline-none rounded-lg p-3 flex border-gray-300"
+                    className="border-x-0 border-b-2 bg-inherit outline-none rounded-lg p-3 flex border-gray-300"
                     type="email"
                     name="email"
                   />
@@ -124,7 +129,7 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Subject</label>
                   <input
-                    className="border-2 outline-none rounded-lg p-3 flex border-gray-300"
+                    className="border-x-0 border-b-2 bg-inherit outline-none rounded-lg p-3 flex border-gray-300"
                     type="text"
                     name="subject"
                   />
@@ -132,12 +137,12 @@ const Contact = () => {
                 <div className="flex flex-col py-2">
                   <label className="uppercase text-sm py-2">Message</label>
                   <textarea
-                    className="border-2 outline-none rounded-lg p-3 border-gray-300"
-                    rows="10"
+                    className="border-x-0 border-b-2 bg-inherit outline-none rounded-lg p-3 mb-10 border-gray-300"
+                    rows="5"
                     name="message"
                   ></textarea>
                 </div>
-                <button className="w-full p-4 text-gray-100 mt-4">
+                <button className="message-btn w-full p-4 text-gray-100 mt-4">
                   Send Message
                 </button>
               </form>
@@ -147,7 +152,7 @@ const Contact = () => {
         <div className="flex justify-center pt-20">
           <Link href="/">
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-[#4a9082]" size={30} />
+              <TbTransitionTop className="text-[#000]" size={30} />
             </div>
           </Link>
         </div>

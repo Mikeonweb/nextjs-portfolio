@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Navbar />
-      <BouncingBalls />
+      {/* <BouncingBalls /> */}
       <Component {...pageProps} />
     </>
   );
