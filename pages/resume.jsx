@@ -110,7 +110,7 @@ const resume = () => {
             {/* <span className="px-2">|</span>Lagos, Nigeria */}
           </p>
           <p className="py-1 italic">
-            Front End Web Developer (December - November 2024)
+            Front End Web Developer (December 2023 - November 2024)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
