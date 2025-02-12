@@ -57,17 +57,7 @@ const resume = () => {
             <p>Problem Solving</p>
           </div>
         </div>
-        {/* <p>
-          Analytical, innovative, and motivated web development professional
-          with experience in customer service, team leadership, and
-          organizational effectiveness in fast-paced and challenging
-          environments. Adept at developing strategies and driving streamlined
-          operations. Diverse analytical skills, team collaboration, and
-          relationship building. Consummate professional, and motivated leader,
-          with solid interpersonal abilities and complex problem-solving skills.
-          Effective and proven track record of critical thinking, idea
-          generation, and optimizing efficiencies.
-        </p> */}
+    
 
         {/* Skills */}
         <div className="text-center py-4">
@@ -97,46 +87,41 @@ const resume = () => {
             {/* <span className="px-2">|</span>Lagos , Nigeria */}
           </p>
           <p className="py-1 italic">
-            Front End Web Developer (August - October 2023)
+            Front End Web Developer (January - October 2023)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-            <li>Utilized ReactJs to create responsive landing pages</li>
+            <li>Developed responsive and dynamic landing pages using React.js.</li>
             <li>
-              Maintained pixel perfect designs and branding through out product
-              interfaces
+              Maintained brand consistency and pixel-perfect design across product interfaces.
             </li>
             <li>
-              Tested and debugged various lines of codes for the development
-              team
+              Debugged and optimized code to enhance performance and functionality.
             </li>
             <li>
-              Rewrote HTML to meet industry and company standard for SEO and
-              accessibility
+              Refactored HTML structures to improve SEO and accessibility compliance.
             </li>
           </ul>
         </div>
 
-        {/* Personal Experience */}
+        
         <div className="py-6">
           <p className="italic">
             <span className="font-bold italic">Seal World</span>
             {/* <span className="px-2">|</span>Lagos, Nigeria */}
           </p>
           <p className="py-1 italic">
-            Front End Web Developer (December - February 2024)
+            Front End Web Developer (December - November 2024)
           </p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Single handedly taught a class of 50 student HTML,CSS and
-              Javascript
+             Conducted a comprehensive front-end development training for 50 students, covering HTML, CSS, and JavaScript.
             </li>
             <li>
-              Mentored 3 team members to enable them achieve professional and
-              personal growth
+              Mentored and guided three team members to enhance their technical and professional growth.
             </li>
             <li>
-              Worked with a team to build a ecommerce website where I designed
-              the user interface using ReactJs
+              Collaborated with a team to build a fully functional e-commerce website, designing and implementing the user
+interface using React.js.
             </li>
           </ul>
         </div>
